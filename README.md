@@ -1,65 +1,85 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://kaulinan.teguhrianto.com/img/kaulinan-logo.png" width="200" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Kaulinan Web
 
-## About Laravel
+## Overview
+Kaulinan Web is the ultimate destination for everything related to high-quality Montessori toys. We understand the importance of play in children's development, and we are committed to providing products that stimulate their creative growth. Here, you can explore various types of toys carefully designed based on Montessori principles to help children learn in a natural and effective way.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Landing Page
+The landing page serves as the front-end of our application and displays dynamic data retrieved from the database. It includes the following sections:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Categories
+- Categories are divided into two types: "Age" and "General".
+- Categories are displayed as cards on the landing page.
+- Categories can be clicked to access related products.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Products
+- Products are displayed in various sections on the landing page.
+- Products may have badges like "Hot," "New," "Sold Out," or "Sale" displayed on their cards.
+- Products have images, titles, and pricing information.
 
-## Learning Laravel
+### Features
+- Features are displayed as cards on the landing page.
+- Each feature card includes a title and a description.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Blogs
+- Blogs are displayed as cards on the landing page.
+- Each blog card includes an image, author information, comment count, and a title.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Local Development
+To run this project locally, follow these steps:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. Clone the repository.
+2. Install project dependencies using `composer install` and `npm install`.
+3. Create a `.env` file and configure your database settings.
+4. Run database migrations and seed the database with sample data using `php artisan migrate --seed`.
+5. Start the Laravel development server using `php artisan serve`.
+6. Compile and watch for front-end changes using `npm run dev`.
 
-## Laravel Sponsors
+- Your application should now be accessible locally at [http://localhost:8000](http://localhost:8000).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Access API endpoints by navigating to [http://localhost:8000/api](http://localhost:8000/api).
 
-### Premium Partners
+## API CRUD Documentation
+You can access the detailed API documentation and endpoint here:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+[https://documenter.getpostman.com/view/5968363/2s9YJW5RcP](https://documenter.getpostman.com/view/5968363/2s9YJW5RcP)
 
-## Contributing
+### Categories API (CRUD)
+- Create a new category: `POST /api/categories`
+- Read all categories: `GET /api/categories`
+- Read a specific category by ID: `GET /api/categories/{id}`
+- Update a category by ID: `PUT /api/categories/{id}`
+- Delete a category by ID: `DELETE /api/categories/{id}`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Products API (CRUD)
+- Create a new product: `POST /api/products`
+- Read all products: `GET /api/products`
+- Read a specific product by ID: `GET /api/products/{id}`
+- Update a product by ID: `PUT /api/products/{id}`
+- Delete a product by ID: `DELETE /api/products/{id}`
 
-## Code of Conduct
+### Features API (CRUD)
+- Create a new feature: `POST /api/features`
+- Read all features: `GET /api/features`
+- Read a specific feature by ID: `GET /api/features/{id}`
+- Update a feature by ID: `PUT /api/features/{id}`
+- Delete a feature by ID: `DELETE /api/features/{id}`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Blogs API (CRUD)
+- Create a new blog: `POST /api/blogs`
+- Read all blogs: `GET /api/blogs`
+- Read a specific blog by ID: `GET /api/blogs/{id}`
+- Update a blog by ID: `PUT /api/blogs/{id}`
+- Delete a blog by ID: `DELETE /api/blogs/{id}`
 
-## Security Vulnerabilities
+## Author
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+**Teguh Rianto** Frontend Developer
+
+**Portfolio** [https://teguhrianto.com](https://teguhrianto.com)
+
+**Github** [https://github.com/teguhrianto](https://github.com/teguhrianto)
 
 ## License
 

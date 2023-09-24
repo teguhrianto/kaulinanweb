@@ -10,6 +10,7 @@
     </title>
     <meta name="description"
         content="Dunia Montessori dalam Permainan Berkualitas. Produk-mainan terbaik untuk pendidikan anak-anak melalui konsep Montessori di situs resmi Kaulinan. Pengalaman belajar luar biasa!">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,7 @@
     <!-- Footer block -->
     @include('layouts.includes.footer')
     <!-- / Footer block -->
-    
+
     <button id="backToTopButton" type="button" class="btn-top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <!-- Scripts -->
