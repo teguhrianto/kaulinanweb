@@ -59,103 +59,17 @@
                     </p>
                 </div>
                 <div class="grid-container">
-                    <div class="lg:col-span-4 md:col-span-6 col-span-12">
-                        <a href="#" class="card card--product">
-                            <span class="badge badge-secondary">Sale</span>
-                            <div class="card-img">
-                                <img src="{{ Vite::asset('resources/img/products/1.png') }}" alt="Product">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Desert Cake Toy</h4>
-                                <img src="{{ Vite::asset('resources/img/products/rating.png') }}" alt="5 Rating"
-                                    class="card-rating">
-                                <h5 class="card-price">
-                                    IDR 230.000
-                                </h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lg:col-span-4 md:col-span-6 col-span-12">
-                        <a href="#" class="card card--product">
-                            <span class="badge badge-secondary">New</span>
-                            <div class="card-img">
-                                <img src="{{ Vite::asset('resources/img/products/2.png') }}" alt="Product">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Wooden Coffee Maker</h4>
-                                <img src="{{ Vite::asset('resources/img/products/rating.png') }}" alt="5 Rating"
-                                    class="card-rating">
-                                <h5 class="card-price">
-                                    IDR 150.000
-                                    <span>IDR 200.000</span>
-                                </h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lg:col-span-4 md:col-span-6 col-span-12">
-                        <a href="#" class="card card--product">
-                            <span class="badge badge-grey">Sold Out</span>
-                            <div class="card-img">
-                                <img src="{{ Vite::asset('resources/img/products/3.png') }}" alt="Product">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Wooden Kitchen Set</h4>
-                                <img src="{{ Vite::asset('resources/img/products/rating.png') }}" alt="5 Rating"
-                                    class="card-rating">
-                                <h5 class="card-price">
-                                    IDR 330.000
-                                </h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lg:col-span-4 md:col-span-6 col-span-12">
-                        <a href="#" class="card card--product">
-                            <span class="badge badge-danger">Hot</span>
-                            <div class="card-img">
-                                <img src="{{ Vite::asset('resources/img/products/4.png') }}" alt="Product">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Ice Cream Stall</h4>
-                                <img src="{{ Vite::asset('resources/img/products/rating.png') }}" alt="5 Rating"
-                                    class="card-rating">
-                                <h5 class="card-price">
-                                    IDR 250.000
-                                </h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lg:col-span-4 md:col-span-6 col-span-12">
-                        <a href="#" class="card card--product">
-                            <span class="badge badge-secondary">New</span>
-                            <div class="card-img">
-                                <img src="{{ Vite::asset('resources/img/products/5.png') }}" alt="Product">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Naughty Furry</h4>
-                                <img src="{{ Vite::asset('resources/img/products/rating.png') }}" alt="5 Rating"
-                                    class="card-rating">
-                                <h5 class="card-price">
-                                    IDR 145.000
-                                </h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lg:col-span-4 md:col-span-6 col-span-12">
-                        <a href="#" class="card card--product">
-                            <span class="badge badge-secondary">Sale</span>
-                            <div class="card-img">
-                                <img src="{{ Vite::asset('resources/img/products/6.png') }}" alt="Product">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Rhino Tosca</h4>
-                                <img src="{{ Vite::asset('resources/img/products/rating.png') }}" alt="5 Rating"
-                                    class="card-rating">
-                                <h5 class="card-price">
-                                    IDR 120.000
-                                </h5>
-                            </div>
-                        </a>
-                    </div>
+                    @foreach ($products as $product)
+                        <div class="lg:col-span-4 md:col-span-6 col-span-12">
+                            <x-card.product
+                                :slug="$product['slug']"
+                                :image="$product['image_url']"
+                                :name="$product['name']"
+                                :originalPrice="$product['original_price']"
+                                :discountedPrice="$product['discounted_price']"
+                                :badge="$product['badge']" />
+                        </div>
+                    @endforeach
                 </div>
 
                 <div class="page-landing__cta">

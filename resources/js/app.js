@@ -57,3 +57,25 @@ window.addEventListener('scroll', toggleBackToTopButton);
 
 // Add click event listener to the back-to-top button
 document.getElementById('backToTopButton').addEventListener('click', scrollToTop);
+
+// currencyFormatter.js
+
+const formatCurrency = (element) => {
+    const price = parseFloat(element.getAttribute('data-price'));
+    if (!isNaN(price)) {
+        element.textContent = new Intl.NumberFormat('id-ID', {
+            style: 'currency',
+            currency: 'IDR',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0,
+        }).format(price);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const priceNumber = document.querySelectorAll('.price-number');
+
+    priceNumber.forEach((element) => {
+        formatCurrency(element);
+    });
+});

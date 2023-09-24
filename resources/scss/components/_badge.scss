@@ -1,15 +1,18 @@
-.badge{
+.badge {
     @apply inline-flex rounded-[24px] py-1 px-3 text-lg;
 
-    &-secondary{
+    &-primary {
+        @apply text-white bg-primary;
+    }
+    &-secondary {
         @apply text-white bg-secondary;
     }
 
-    &-danger{
+    &-danger {
         @apply text-white bg-danger;
     }
 
-    &-grey{
+    &-grey {
         @apply text-dark bg-[#E6E6E6];
     }
 }

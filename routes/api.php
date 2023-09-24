@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\CategoryController;
+use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\FeatureController;
 use App\Http\Controllers\API\BlogController;
 
@@ -23,6 +24,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Categories
 Route::resource('categories', CategoryController::class);
+
+// Products
+Route::resource('products', ProductController::class);
 
 // Features
 Route::resource('features', FeatureController::class);
