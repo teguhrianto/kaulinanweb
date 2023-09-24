@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Landing;
+use App\Http\Controllers\LandingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +16,4 @@ use App\Http\Controllers\Landing;
 
 
 
-Route::get('/', [Landing::class, 'index']);
+Route::get('/', [LandingController::class, 'index']);

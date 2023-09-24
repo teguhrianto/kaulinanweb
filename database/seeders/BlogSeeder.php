@@ -17,6 +17,7 @@ class BlogSeeder extends Seeder
             [
                 'title' => 'Tips Memahami Anak Anda Lebih Baik - Panduan Orang Tua!',
                 'slug' => 'tips-memahami-anak-anda-lebih-baik',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/articles/1.png',
                 'content' => 'Tips Memahami Anak Anda Lebih Baik - Panduan Orang Tua! Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 'author_id' => 1,
                 'is_featured' => 1,
@@ -26,6 +27,7 @@ class BlogSeeder extends Seeder
             [
                 'title' => 'Mengapa Mainan untuk anak pra sekolah Penting',
                 'slug' => 'mengapa-mainan-untuk-anak-pra-sekolah-penting',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/articles/2.png',
                 'content' => 'Mengapa Mainan untuk anak pra sekolah Penting Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 'author_id' => 1,
                 'is_featured' => 1,
@@ -35,6 +37,7 @@ class BlogSeeder extends Seeder
             [
                 'title' => 'Mainan Mana yang Terbaik untuk Pra Sekolah',
                 'slug' => 'mainan-mana-yang-terbaik-untuk-pra-sekolah',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/articles/3.png',
                 'content' => 'Mainan Mana yang Terbaik untuk Pra Sekolah Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 'author_id' => 1,
                 'is_featured' => 1,
@@ -42,6 +45,5 @@ class BlogSeeder extends Seeder
                 'updated_at' => now(),
             ],
         ]);
-
     }
 }

@@ -17,22 +17,22 @@ class FeatureSeeder extends Seeder
             [
                 'title' => 'Kualitas Terbaik',
                 'description' => 'Bahan berkualitas tinggi yang aman dan ramah lingkungan',
-                'image_url' => 'resources/img/features/1.svg',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/features/1.svg',
             ],
             [
                 'title' => 'Inovasi',
                 'description' => 'Menerapkan inovasi terbaru dalam desain dan teknologi',
-                'image_url' => 'resources/img/features/2.svg',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/features/2.svg',
             ],
             [
                 'title' => 'Kepuasan Pelanggan',
                 'description' => 'Kepuasan pelanggan adalah prioritas utama kami',
-                'image_url' => 'resources/img/features/3.svg',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/features/3.svg',
             ],
             [
                 'title' => 'Gratis Ongkir',
                 'description' => 'Layanan pengiriman gratis ke seluruh penjuru negeri',
-                'image_url' => 'resources/img/features/4.svg',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/features/4.svg',
             ],
         ]);
     }

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug')->unique();
+            $table->string('image_url');
             $table->text('content');
             $table->unsignedBigInteger('author_id'); // Foreign key to users table
             $table->boolean('is_featured')->default(false); // Added is_featured column

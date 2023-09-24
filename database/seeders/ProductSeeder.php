@@ -21,7 +21,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Desert Cake Toy is Kaulinan Best Seller',
                 'original_price' => 250000, // Add original price
                 'discounted_price' => 230000, // Add discounted price
-                'image_url' => 'img/products/1.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/products/1.png',
                 'badge' => 'Sale',
                 'category_id' => 8, // Use the appropriate category ID
             ],
@@ -31,7 +31,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Wooden Coffee Maker is Kaulinan Best Seller',
                 'original_price' => 200000, // Add original price
                 'discounted_price' => 150000, // Add discounted price
-                'image_url' => 'img/products/2.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/products/2.png',
                 'badge' => 'Sale',
                 'category_id' => 2, // Use the appropriate category ID
             ],
@@ -41,7 +41,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Wooden Kitchen Set is Kaulinan Best Seller',
                 'original_price' => 330000, // Add original price
                 'discounted_price' => null, // Add discounted price
-                'image_url' => 'img/products/3.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/products/3.png',
                 'badge' => 'Sold Out',
                 'category_id' => 3, // Use the appropriate category ID
             ],
@@ -51,7 +51,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Ice Cream Stall is Kaulinan Best Seller',
                 'original_price' => 250000, // Add original price
                 'discounted_price' => null, // Add discounted price
-                'image_url' => 'img/products/4.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/products/4.png',
                 'badge' => 'Hot',
                 'category_id' => 5, // Use the appropriate category ID
             ],
@@ -61,7 +61,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Naughty Furry is Kaulinan Best Seller',
                 'original_price' => 145000, // Add original price
                 'discounted_price' => null, // Add discounted price
-                'image_url' => 'img/products/5.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/products/5.png',
                 'badge' => 'New',
                 'category_id' => 5, // Use the appropriate category ID
             ],
@@ -71,7 +71,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Rhino Tosca is Kaulinan Best Seller',
                 'original_price' => 120000, // Add original price
                 'discounted_price' => null, // Add discounted price
-                'image_url' => 'img/products/6.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/products/6.png',
                 'badge' => 'New',
                 'category_id' => 6, // Use the appropriate category ID
             ],

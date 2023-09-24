@@ -1,9 +1,13 @@
-@props(['slug' => '#', 'image', 'title', 'subtitle', 'cta'])
+@props(['slug' => '#', 'image', 'name', 'subtitle' => 'Lihat Produk Terbaru', 'cta' => 'Beli Sekarang'])
 
-<a href="{{ $slug }}" class="card card--category">
-    <img src="{{ Vite::asset($image) }}" alt="{{ $title }}" class="card-img">
+<a href="category/{{ $slug }}" class="card card--category">
+    @if ($image)
+        <img src="{{ $image }}" alt="{{ $name }} Here" class="card-img">
+    @else
+        <img src="{{ Vite::asset('resources/img/placeholder.png') }}" alt="{{ $name }}" class="card-img">
+    @endif
     <div class="card-body">
-        <h4>{{ $title }}</h4>
+        <h4>{{ $name }}</h4>
         <h5>{{ $subtitle }}</h5>
         <p class="text-secondary">{{ $cta }}</p>
     </div>

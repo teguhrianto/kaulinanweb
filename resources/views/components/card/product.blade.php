@@ -24,7 +24,11 @@
         <span class="{{ $badgeClass }}">{{ $badge }}</span>
     @endif
     <div class="card-img">
-        <img src="{{ Vite::asset($image) }}" alt="{{ $title }}">
+        @if ($image)
+            <img src="{{ $image }}" alt="{{ $title }} Here">
+        @else
+            <img src="{{ Vite::asset('resources/img/placeholder.png') }}" alt="{{ $title }}">
+        @endif
     </div>
     <div class="card-body">
         <h4 class="card-title">{{ $title }}</h4>

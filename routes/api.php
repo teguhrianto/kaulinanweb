@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\CategoryController;
+use App\Http\Controllers\API\FeatureController;
+use App\Http\Controllers\API\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +20,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Categories
+Route::resource('categories', CategoryController::class);
+
+// Features
+Route::resource('features', FeatureController::class);
+
+// Blogs
+Route::resource('blogs', BlogController::class);

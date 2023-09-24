@@ -35,29 +35,31 @@ class CategorySeeder extends Seeder
             [
                 'name' => '8-12',
                 'slug' => '8-12',
-                'image_url' => null, 'type' => 'age'],
+                'image_url' => null,
+                'type' => 'age'
+            ],
             [
                 'name' => 'Terbaru',
                 'slug' => 'terbaru',
-                'image_url' => 'resources/img/category/bg-1.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/category/bg-1.png',
                 'type' => 'general'
             ],
             [
                 'name' => 'Kids Toy',
                 'slug' => 'kids-toy',
-                'image_url' => 'resources/img/category/bg-2.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/category/bg-2.png',
                 'type' => 'general'
             ],
             [
                 'name' => 'Aksesoris',
                 'slug' => 'aksesoris',
-                'image_url' => 'resources/img/category/bg-3.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/category/bg-3.png',
                 'type' => 'general'
             ],
             [
                 'name' => 'Trending',
                 'slug' => 'trending',
-                'image_url' => 'resources/img/category/bg-4.png',
+                'image_url' => 'https://kaulinan.teguhrianto.com/img/category/bg-4.png',
                 'type' => 'general'
             ],
         ]);

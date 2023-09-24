@@ -16,7 +16,7 @@
     }
 
     &--category {
-        @apply p-6 min-h-[367px] overflow-hidden;
+        @apply p-6 min-h-[367px] overflow-hidden bg-secondary;
 
         &:hover {
             .card {
