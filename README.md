@@ -5,11 +5,11 @@
 ## Overview
 Kaulinan Web is the ultimate destination for everything related to high-quality Montessori toys. We understand the importance of play in children's development, and we are committed to providing products that stimulate their creative growth. Here, you can explore various types of toys carefully designed based on Montessori principles to help children learn in a natural and effective way.
 
+## Preview
+**Live URL:** [https://kaulinantask.xcodehoster.com/](https://kaulinantask.xcodehoster.com/)
+
 ## Landing Page
 The landing page serves as the front-end of our application and displays dynamic data retrieved from the database. It includes the following sections:
-
-### Preview
-**Live URL:** [https://kaulinantask.xcodehoster.com/](https://kaulinantask.xcodehoster.com/)
 
 ### Categories
 - Categories are divided into two types: "Age" and "General".
