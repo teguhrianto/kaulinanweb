@@ -1,0 +1,91 @@
+.header{
+    @apply relative;
+    &-top{
+        @apply pt-[5px] px-[15px] pb-[10px] md:py-[10px] md:px-[30px] bg-primary text-white flex items-center justify-center md:justify-between relative overflow-hidden;
+
+        ul{
+            @apply flex gap-4 list-none items-center relative z-10;
+
+            li{
+                a{
+                    @apply hover:text-secondary;
+                }
+            }
+        }
+
+        &__list{
+            li{
+                @apply text-base font-medium;
+                a{
+                    @apply text-white flex items-center gap-2;
+                }
+            }
+        }
+
+        &__social{
+            @apply hidden md:flex #{!important};
+            li{
+                @apply text-[28px];
+
+                a{
+                    @apply text-white block hover:scale-[1.1];
+                }
+            }
+        }
+    }
+
+    &-bottom{
+        @apply absolute z-[1024] w-full left-0;
+    }
+    .navbar{
+        @apply py-[10px] md:py-[15px] relative w-full z-[1024] bg-white transition-all duration-300 ease-in-out;
+        &-brand{
+            @apply block;
+            img{
+                @apply h-10 md:h-[90px] w-auto;
+            }
+        }
+
+        &-mobile{
+            @apply flex items-center justify-between lg:hidden relative z-[2] bg-white;
+        }
+
+        &-toggler{
+            @apply p-0 border-0 bg-transparent;
+        }
+
+        &-nav{
+            @apply absolute lg:relative p-4 lg:p-0 w-full lg:w-auto flex-col lg:flex-row left-0 bg-white lg:bg-transparent invisible lg:visible opacity-0 lg:opacity-100 flex items-center justify-center gap-5 lg:gap-[60px] list-none transition-all duration-300 ease-in-out -translate-y-1/4 lg:translate-y-0 shadow-md lg:shadow-none;
+
+            &.show{
+                @apply visible opacity-100 translate-y-0;
+            }
+            .nav{
+                &-item{
+                    @apply text-lg text-black text-center font-semibold;
+
+                    &.active{
+                        .nav-link{
+                            @apply text-primary;
+                        }
+                    }
+
+                    &--brand{
+                        @apply hidden lg:block;
+                    }
+                }
+                &-link{
+                    @apply text-lg text-black text-center font-semibold hover:text-primary;
+
+                    &.active{
+                        @apply text-primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &-fixed{
+        @apply fixed -top-[120px] transition-all duration-300 ease-in-out shadow-md;
+    }
+}

@@ -1,0 +1,11 @@
+h1{
+    @apply text-[40px] leading-tight md:text-[50px] lg:text-[70px] font-semibold;
+}
+
+h3{
+    @apply text-[30px] leading-tight md:text-[45px] lg:text-[55px] font-semibold;
+}
+
+h4{
+    @apply text-[23px] leading-tight;
+}

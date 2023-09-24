@@ -1,0 +1,26 @@
+// Base grid layout
+.grid-container {
+  @apply grid grid-cols-12 gap-[30px];
+}
+
+@for $i from 1 through 12 {
+  .grid-lg-#{$i} {
+    @apply col-span-#{$i};
+  }
+}
+
+@include between(md, lg) {
+  @for $i from 1 through 12 {
+    .grid-md-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@include below(md) {
+  @for $i from 1 through 12 {
+    .grid-sm-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}

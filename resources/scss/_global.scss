@@ -1,0 +1,70 @@
+body {
+    @apply font-primary leading-normal text-lg;
+}
+
+* {
+    @apply outline-none outline-offset-0 focus:outline-none active:outline-none;
+}
+
+button {
+    @apply cursor-pointer focus:shadow-none active:shadow-none transition-all duration-300 ease-in-out;
+}
+
+strong {
+    @apply font-bold;
+}
+
+a {
+    @apply cursor-pointer focus:shadow-none active:shadow-none transition-all duration-300 ease-in-out no-underline text-primary hover:no-underline hover:text-primary;
+}
+
+small,
+.small {
+    @apply text-xs;
+}
+
+ol,
+ul {
+    @apply p-0 m-0;
+    li {
+        @apply text-lg;
+    }
+}
+
+main {
+    @apply pt-[60px] md:pt-[120px] overflow-hidden;
+}
+
+section {
+    @apply relative bg-cover overflow-hidden py-[60px];
+}
+
+.container,
+.container-fluid {
+    position: relative;
+    z-index: 4;
+    @apply relative z-10;
+}
+
+.container {
+    @apply px-4 mx-auto max-w-none w-full xl:max-w-[1170px] 2xl:max-w-[1320px];
+
+    &-fluid {
+        width: 100%;
+        padding: 0 15px;
+
+        @apply w-full px-4;
+    }
+}
+
+.section-title {
+    @apply mb-14 text-center;
+
+    h3 {
+        @apply mb-0;
+    }
+
+    p {
+        @apply mb-0 mt-[18px];
+    }
+}

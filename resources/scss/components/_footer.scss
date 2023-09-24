@@ -1,0 +1,62 @@
+.footer{
+    @apply relative text-grey;
+    &-top{
+        @apply py-[60px];
+    }
+
+    &-about{
+        @apply text-center lg:text-left;
+    }
+
+    &-brand{
+        @apply mb-[30px] text-center lg:text-left;
+        img{
+            @apply h-[31px] w-auto inline-block;
+        }
+
+        + p{
+            @apply max-w-none lg:max-w-[300px];
+        }
+    }
+
+    &-socials{
+        @apply flex gap-5 mt-[35px] justify-center lg:justify-normal;
+
+        a{
+            @apply flex items-center justify-center bg-secondary rounded-full text-lg text-white w-12 h-12 hover:bg-primary scale-[1.1];
+        }
+    }
+
+    &-widget{
+        @apply text-center md:text-left;
+        h4{
+            @apply mb-[30px] font-semibold;
+        }
+
+        ul{
+            @apply list-none flex flex-col gap-[10px];
+
+            li{
+                a{
+                    @apply flex items-center gap-2 text-grey md:justify-normal justify-center hover:text-primary;
+
+                    i{
+                        @apply text-secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom{
+        @apply bg-primary text-center text-white py-[15px] relative;
+
+        &::before{
+            background-image: url('../img/bg-wave-footer.png') !important;
+        }
+
+        p{
+            @apply mb-0;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+// Utilities
+.bg{
+    &-gradient{
+        background: var(--bg-linear) !important;
+    }
+
+    &-wave{
+        &::before, &::after{
+            @apply absolute left-0 w-full h-4 bg-cover;
+        }
+
+        &--top{
+            &::before{
+                content: "";
+                background-image: url('../img/bg-wave-top.png');
+                @apply -top-[7px];
+            }
+        }
+
+        &--bottom{
+            &::after{
+                content: "";
+                background-image: url('../img/bg-wave-bottom.png');
+                @apply -bottom-[7px];
+            }
+        }
+    }
+}
+
+.font{
+    &-size{
+        &-23{
+            @apply text-[23px] leading-tight;
+        }
+
+        &-18{
+            @apply text-lg;
+        }
+    }
+}
+
+.img{
+    &-full{
+        @apply w-full h-auto;
+    }
+}
