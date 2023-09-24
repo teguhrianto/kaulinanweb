@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('original_price', 10, 2); // Add original price
             $table->decimal('discounted_price', 10, 2)->nullable(); // Add discounted price
             $table->string('image_url');
-            $table->enum('badge', ['Hot', 'New', 'Sold', 'Sale'])->nullable();
+            $table->enum('badge', ['Hot', 'New', 'Sold Out', 'Sale'])->nullable();
             $table->unsignedBigInteger('category_id');
             $table->timestamps();
 
