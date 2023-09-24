@@ -8,6 +8,9 @@ Kaulinan Web is the ultimate destination for everything related to high-quality 
 ## Landing Page
 The landing page serves as the front-end of our application and displays dynamic data retrieved from the database. It includes the following sections:
 
+### Preview
+**Live URL:** [https://kaulinantask.xcodehoster.com/](https://kaulinantask.xcodehoster.com/)
+
 ### Categories
 - Categories are divided into two types: "Age" and "General".
 - Categories are displayed as cards on the landing page.
@@ -25,6 +28,15 @@ The landing page serves as the front-end of our application and displays dynamic
 ### Blogs
 - Blogs are displayed as cards on the landing page.
 - Each blog card includes an image, author information, comment count, and a title.
+
+## Tech Stacks
+- **Laravel:** Laravel is a PHP web framework that handles the server-side logic and database operations.
+
+- **Tailwind CSS:** Tailwind CSS is a utility-first CSS framework for styling the user interface.
+
+- **JavaScript (JS):** JavaScript adds interactivity and enhances the user experience on the client-side.
+
+These technologies work together to build and style the web application, making it interactive and user-friendly.
 
 ## Local Development
 To run this project locally, follow these steps:
